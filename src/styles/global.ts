@@ -39,13 +39,12 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${pros => pros.theme['primary-100']};
-    color: ${pros => pros.theme['gray-300']};
 		-webkit-font-smoothing: antialiased;
   }
   
   body, input, textarea, select, button {
     font: 400 1rem 'Roboto', sans-serif;
-    color: ${props => props.theme['gray-300']};
+    color: ${props => props.theme['gray-700']};
   }
 
   h1, h2, h3, h4, h5, h6, strong {
