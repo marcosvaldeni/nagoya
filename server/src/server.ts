@@ -4,11 +4,12 @@ import dotenv from 'dotenv';
 import express from 'express';
 import routes from './routes';
 
+import './database';
+
 dotenv.config();
 
 const app = express();
 app.use(routes);
-
 
 app.get('/', (req, res) => {
 	return res.json({ message: 'Nagoya' });
