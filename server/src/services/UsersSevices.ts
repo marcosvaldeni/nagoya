@@ -1,4 +1,3 @@
-
 interface Request {
   name: string;
   email: string;
@@ -6,13 +5,10 @@ interface Request {
   role: string;
 }
 
-class CreateUserService {
+export class CreateUserService {
 
   public async execute({ name, email, password, role }: Request): Promise<string> {
-
 
     return 'From Sevice';
   }
 }
-
-export default CreateUserService;
